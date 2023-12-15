@@ -2,6 +2,75 @@
 	"name": "Hoja de eventos 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Pieza",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 798827543817400
+		},
+		{
+			"eventType": "variable",
+			"name": "PiezaAColocar",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 913868634462908
+		},
+		{
+			"eventType": "variable",
+			"name": "Tutorial",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 812213036889377
+		},
+		{
+			"eventType": "variable",
+			"name": "PiezasEntregadas",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 604146246785373
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 161013025854035
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Misión",
+					"sid": 733684252171999,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Final",
+					"sid": 832646324471838,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 497462606775833
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -193,6 +262,348 @@
 				}
 			],
 			"sid": 912258046374656
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 262338214672112,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 499644490681217,
+					"parameters": {
+						"object": "Entrega"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 543788675939973,
+					"parameters": {
+						"animation": "\"Interactuar\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 663269962996814
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Misión",
+					"sid": 126316340683465
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Misión",
+					"sid": 602088685831962,
+					"parameters": {
+						"x": "Player.X",
+						"y": "Player.Y-50"
+					}
+				}
+			],
+			"sid": 978071115867857
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Misión",
+					"sid": 135487295616536,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "30"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Misión",
+					"sid": 507064025124535,
+					"parameters": {
+						"x": "Player.x",
+						"y": "Player.Y+50"
+					}
+				}
+			],
+			"sid": 710621443110098
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 706992215812016,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 788559463577344,
+					"parameters": {
+						"object": "colision"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Misión",
+					"sid": 709024114097582,
+					"parameters": {
+						"animation": "\"Animacion9\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 691105631454271,
+					"parameters": {
+						"variable": "Pieza",
+						"value": "PiezasEntregadas"
+					}
+				}
+			],
+			"sid": 965610997617074
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 670822663722865,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 799318395294045,
+					"parameters": {
+						"object": "colision"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 269986276537112,
+					"parameters": {
+						"variable": "Pieza",
+						"value": "Pieza+1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Misión",
+					"sid": 608659912510547,
+					"parameters": {
+						"animation": "\"Animacion\"&Pieza",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Misión",
+					"sid": 682909868695350,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 120978952427871
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 779780301252902,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 393777805285621,
+					"parameters": {
+						"object": "Entrega"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 472422960002920,
+					"parameters": {
+						"first-value": "PiezaAColocar",
+						"comparison": 0,
+						"second-value": "Pieza"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 759574080977486,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"value": "PiezasEntregadas+1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Misión",
+					"sid": 457346386208871,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 958305245330949,
+					"parameters": {
+						"variable": "PiezaAColocar",
+						"value": "PiezaAColocar+1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Entrega",
+					"sid": 490608626839392
+				}
+			],
+			"sid": 892773175570112
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 689456289830024,
+					"parameters": {
+						"object": "colision"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 483502331164061,
+					"parameters": {
+						"variable": "Tutorial"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 846132393730167,
+					"parameters": {
+						"variable": "Tutorial",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Misión",
+					"sid": 739623422210786,
+					"parameters": {
+						"animation": "\"Animacion1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 485208622879209,
+					"parameters": {
+						"variable": "Pieza",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Misión",
+					"sid": 907406166021346,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 313368640541561
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 841088673453701,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"comparison": 0,
+						"value": "9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Final",
+					"sid": 292079484782973,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Final",
+					"sid": 174505147019142,
+					"parameters": {
+						"object": "Player",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Misión",
+					"sid": 343514640723970
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 499312547234534
+				}
+			],
+			"sid": 627851059196021
 		}
 	],
 	"sid": 538042458039003
