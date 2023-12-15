@@ -1,0 +1,199 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 740962149324861,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 531225193129770,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 999182805860636
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 255308468068826,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player",
+					"sid": 482056538132908,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 858734193354424
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "Player",
+					"sid": 690014152866935,
+					"behaviorType": "Plataforma"
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "Player",
+					"sid": 195251354203002,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"comparison": 0,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 694136891103971,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 781321299745457
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "Player",
+					"sid": 274486533332645,
+					"behaviorType": "Plataforma"
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "Player",
+					"sid": 280500740873312,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"comparison": 4,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 522810995464805,
+					"parameters": {
+						"animation": "\"Movimineto\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 609313454966121
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "Player",
+					"sid": 921747648904874,
+					"behaviorType": "Plataforma"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 302053839104356,
+					"parameters": {
+						"animation": "\"Caer\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 281979774447803
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "Player",
+					"sid": 631914140023850,
+					"behaviorType": "Plataforma"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 696257683314504,
+					"parameters": {
+						"animation": "\"Saltar\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 877311757444492
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 254682159925164,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 663187776582757,
+					"parameters": {
+						"object": "colision"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 495669876764199,
+					"parameters": {
+						"animation": "\"Interactuar\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 912258046374656
+		}
+	],
+	"sid": 538042458039003
+}
