@@ -2,6 +2,194 @@
 	"name": "Hoja de eventos 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Pieza",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 798827543817400
+		},
+		{
+			"eventType": "variable",
+			"name": "PiezaAColocar",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 913868634462908
+		},
+		{
+			"eventType": "variable",
+			"name": "Tutorial",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 812213036889377
+		},
+		{
+			"eventType": "variable",
+			"name": "PiezasEntregadas",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 604146246785373
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 161013025854035
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Misión",
+					"sid": 733684252171999,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Final",
+					"sid": 293720275215394,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "01FDA",
+					"sid": 481213817241345,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "01FDA",
+					"sid": 357131650649718,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "02SDD",
+					"sid": 432500600561780,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "02SDD",
+					"sid": 205098903356611,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "03GPU",
+					"sid": 465535694230692,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "03GPU",
+					"sid": 153894600959148,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "04Ventilador",
+					"sid": 549267614508287,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "04Ventilador",
+					"sid": 450313967711100,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "05CPU",
+					"sid": 876796472131486,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "05CPU",
+					"sid": 201837682521037,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "06RAM",
+					"sid": 711000240266842,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "06RAM",
+					"sid": 640714393876499,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "07LDD",
+					"sid": 508446027553827,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "07LDD",
+					"sid": 206056773300688,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 497462606775833
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -193,6 +381,769 @@
 				}
 			],
 			"sid": 912258046374656
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 262338214672112,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 499644490681217,
+					"parameters": {
+						"object": "Entrega"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 543788675939973,
+					"parameters": {
+						"animation": "\"Interactuar\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 663269962996814
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Misión",
+					"sid": 126316340683465
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Misión",
+					"sid": 602088685831962,
+					"parameters": {
+						"x": "Player.X",
+						"y": "Player.Y-50"
+					}
+				}
+			],
+			"sid": 978071115867857
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Misión",
+					"sid": 135487295616536,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "30"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Misión",
+					"sid": 507064025124535,
+					"parameters": {
+						"x": "Player.x",
+						"y": "Player.Y+50"
+					}
+				}
+			],
+			"sid": 710621443110098
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 706992215812016,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 788559463577344,
+					"parameters": {
+						"object": "colision"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Misión",
+					"sid": 709024114097582,
+					"parameters": {
+						"animation": "\"Animacion9\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 691105631454271,
+					"parameters": {
+						"variable": "Pieza",
+						"value": "PiezasEntregadas"
+					}
+				}
+			],
+			"sid": 965610997617074
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 670822663722865,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 799318395294045,
+					"parameters": {
+						"object": "colision"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 269986276537112,
+					"parameters": {
+						"variable": "Pieza",
+						"value": "Pieza+1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Misión",
+					"sid": 608659912510547,
+					"parameters": {
+						"animation": "\"Animacion\"&Pieza",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Misión",
+					"sid": 682909868695350,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 120978952427871
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 779780301252902,
+					"parameters": {
+						"key": 40
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 393777805285621,
+					"parameters": {
+						"object": "Entrega"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 472422960002920,
+					"parameters": {
+						"first-value": "PiezaAColocar",
+						"comparison": 0,
+						"second-value": "Pieza"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 759574080977486,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"value": "PiezasEntregadas+1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Misión",
+					"sid": 457346386208871,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 958305245330949,
+					"parameters": {
+						"variable": "PiezaAColocar",
+						"value": "PiezaAColocar+1"
+					}
+				}
+			],
+			"sid": 892773175570112
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 689456289830024,
+					"parameters": {
+						"object": "colision"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 483502331164061,
+					"parameters": {
+						"variable": "Tutorial"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 846132393730167,
+					"parameters": {
+						"variable": "Tutorial",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Misión",
+					"sid": 739623422210786,
+					"parameters": {
+						"animation": "\"Animacion1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 485208622879209,
+					"parameters": {
+						"variable": "Pieza",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Misión",
+					"sid": 907406166021346,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 313368640541561
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 858163586058686,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 992500916575006,
+					"parameters": {
+						"variable": "Pieza",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Entrega",
+					"sid": 209456773363486,
+					"parameters": {
+						"x": "250.63407",
+						"y": "695.05052"
+					}
+				}
+			],
+			"sid": 808485947556524
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 664932105768910,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 391939017366482,
+					"parameters": {
+						"variable": "Pieza",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Entrega",
+					"sid": 508915089964330,
+					"parameters": {
+						"x": "401.144147",
+						"y": "695.05052"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "01FDA",
+					"sid": 301803067763370,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "01FDA",
+					"sid": 914584186926343,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 752361127799328
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 786426605598464,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 918664496623626,
+					"parameters": {
+						"variable": "Pieza",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Entrega",
+					"sid": 674492559555298,
+					"parameters": {
+						"x": "473.333652",
+						"y": " 506.967829"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "02SDD",
+					"sid": 361765320123615,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "02SDD",
+					"sid": 404542476772659,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 911960748469582
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 173521478154993,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 796606114473201,
+					"parameters": {
+						"variable": "Pieza",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Entrega",
+					"sid": 537665169197404,
+					"parameters": {
+						"x": "34.257585",
+						"y": "413.039367"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "03GPU",
+					"sid": 669323100552821,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "03GPU",
+					"sid": 541205973100784,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 668358412874845
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 800954418243600,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"comparison": 0,
+						"value": "5"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 112912685298630,
+					"parameters": {
+						"variable": "Pieza",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Entrega",
+					"sid": 727324234950024,
+					"parameters": {
+						"x": "23.222119",
+						"y": "277.2834"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "04Ventilador",
+					"sid": 847006962430279,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "04Ventilador",
+					"sid": 879857494539485,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 816146838017270
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 893865439261768,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"comparison": 0,
+						"value": "6"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 161908626249422,
+					"parameters": {
+						"variable": "Pieza",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Entrega",
+					"sid": 443677692518168,
+					"parameters": {
+						"x": "282.061629",
+						"y": "198.59574"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "05CPU",
+					"sid": 640476251634356,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "05CPU",
+					"sid": 624757223338734,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 404205879505436
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 607401679998723,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"comparison": 0,
+						"value": "7"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 601827908640248,
+					"parameters": {
+						"variable": "Pieza",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Entrega",
+					"sid": 624994091108236,
+					"parameters": {
+						"x": "413.838098",
+						"y": "58.436902"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "06RAM",
+					"sid": 571464584006446,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "06RAM",
+					"sid": 988464862122887,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 635128206261192
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 201393711947470,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"comparison": 0,
+						"value": "8"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 716577391708461,
+					"parameters": {
+						"variable": "Pieza",
+						"comparison": 0,
+						"value": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Entrega",
+					"sid": 690470403271883,
+					"parameters": {
+						"x": "601.186988",
+						"y": "34.277417"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "07LDD",
+					"sid": 955829368102132,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "07LDD",
+					"sid": 104690106317517,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 651589008447962
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 543834014262867,
+					"parameters": {
+						"variable": "PiezasEntregadas",
+						"comparison": 0,
+						"value": "9"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 473050329705325,
+					"parameters": {
+						"variable": "Pieza",
+						"comparison": 0,
+						"value": "9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Final",
+					"sid": 555573753395664,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Final",
+					"sid": 330356679982380
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Misión",
+					"sid": 589077876631504
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 873298247977549
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Entrega",
+					"sid": 856278638533297
+				}
+			],
+			"sid": 410221308124473
 		}
 	],
 	"sid": 538042458039003
