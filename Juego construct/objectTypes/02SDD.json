@@ -1,14 +1,14 @@
 {
-	"name": "Coliders",
+	"name": "02SDD",
 	"plugin-id": "Sprite",
-	"sid": 241483784989531,
+	"sid": 413286864066413,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Sólido",
-			"sid": 644040060002027
+			"sid": 385649626966683
 		}
 	],
 	"effectTypes": [],
@@ -19,19 +19,19 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.496,
-						"originY": 0.5833333333333334,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7431533,
+						"imageSpriteId": 643430,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 127872944563968,
-				"name": "coliders",
+				"sid": 416941867312500,
+				"name": "SSD",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
