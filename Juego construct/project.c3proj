@@ -58,7 +58,8 @@
 			"04Ventilador",
 			"05CPU",
 			"06RAM",
-			"07LDD"
+			"07LDD",
+			"Fondo"
 		],
 		"subfolders": []
 	},
