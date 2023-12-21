@@ -9,7 +9,7 @@
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Keyboard",
+			"name": "Teclado",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -23,21 +23,21 @@
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Platform",
+			"name": "Plataforma",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Scroll To",
+			"name": "Desplazar hasta",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Solid",
+			"name": "Sólido",
 			"author": "Scirra",
 			"bundled": false
 		}
