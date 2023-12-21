@@ -793,10 +793,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "Entrega",
-					"sid": 880217209593047,
+					"sid": 563730502284829,
 					"parameters": {
-						"x": "466.834128",
-						"y": "502.737082"
+						"x": "470",
+						"y": "504"
 					}
 				},
 				{
@@ -901,10 +901,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "Entrega",
-					"sid": 727324234950024,
+					"sid": 609356857670494,
 					"parameters": {
-						"x": "23.222119",
-						"y": "277.2834"
+						"x": "28",
+						"y": "277"
 					}
 				},
 				{
@@ -922,6 +922,15 @@
 					"sid": 879857494539485,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Entrega",
+					"sid": 550945590214261,
+					"parameters": {
+						"width": "20",
+						"height": "32"
 					}
 				}
 			],
@@ -959,6 +968,15 @@
 					"parameters": {
 						"x": "282.061629",
 						"y": "198.59574"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Entrega",
+					"sid": 205460012123041,
+					"parameters": {
+						"width": "32",
+						"height": "32"
 					}
 				},
 				{
@@ -1009,10 +1027,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "Entrega",
-					"sid": 586481530521624,
+					"sid": 895605662466541,
 					"parameters": {
 						"x": "413.789911",
-						"y": "58.817863"
+						"y": "64"
 					}
 				},
 				{
@@ -1120,6 +1138,14 @@
 					"sid": 555573753395664,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "Final",
+					"sid": 326510199239950,
+					"parameters": {
+						"layer": "1"
 					}
 				},
 				{

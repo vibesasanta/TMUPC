@@ -59,7 +59,8 @@
 			"05CPU",
 			"06RAM",
 			"07LDD",
-			"Fondo"
+			"Fondo",
+			"Pantalla"
 		],
 		"subfolders": []
 	},

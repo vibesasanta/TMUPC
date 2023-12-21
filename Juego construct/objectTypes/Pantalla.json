@@ -1,7 +1,7 @@
 {
-	"name": "colision",
+	"name": "Pantalla",
 	"plugin-id": "Sprite",
-	"sid": 658620344413882,
+	"sid": 492895176718268,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,21 +11,41 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4093361,
+						"imageSpriteId": 9750610,
+						"collisionPoly": {
+							"points": [
+								0.03125,
+								0,
+								0.96875,
+								0,
+								1,
+								0.0625,
+								1,
+								0.9375,
+								0.96875,
+								1,
+								0.03125,
+								1,
+								0,
+								0.9375,
+								0,
+								0.0625
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 826134433757504,
-				"name": "Colision",
+				"sid": 911477287815446,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
