@@ -33,6 +33,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "Inicio",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 610370878941225
+		},
+		{
+			"eventType": "variable",
 			"name": "PiezasEntregadas",
 			"type": "number",
 			"initialValue": "1",
@@ -53,137 +63,18 @@
 			"actions": [
 				{
 					"id": "set-visible",
-					"objectClass": "Misión",
-					"sid": 733684252171999,
+					"objectClass": "FondoInicio",
+					"sid": 478519953289345,
 					"parameters": {
-						"visibility": "invisible"
+						"visibility": "visible"
 					}
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Final",
-					"sid": 293720275215394,
+					"objectClass": "Botón",
+					"sid": 761214456021610,
 					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "01FDA",
-					"sid": 481213817241345,
-					"behaviorType": "Sólido",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "01FDA",
-					"sid": 357131650649718,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "02SDD",
-					"sid": 432500600561780,
-					"behaviorType": "Sólido",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "02SDD",
-					"sid": 205098903356611,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "03GPU",
-					"sid": 465535694230692,
-					"behaviorType": "Sólido",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "03GPU",
-					"sid": 153894600959148,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "04Ventilador",
-					"sid": 549267614508287,
-					"behaviorType": "Sólido",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "04Ventilador",
-					"sid": 450313967711100,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "05CPU",
-					"sid": 876796472131486,
-					"behaviorType": "Sólido",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "05CPU",
-					"sid": 201837682521037,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "06RAM",
-					"sid": 711000240266842,
-					"behaviorType": "Sólido",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "06RAM",
-					"sid": 640714393876499,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "07LDD",
-					"sid": 508446027553827,
-					"behaviorType": "Sólido",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "07LDD",
-					"sid": 206056773300688,
-					"parameters": {
-						"visibility": "invisible"
+						"visibility": "visible"
 					}
 				}
 			],
@@ -707,6 +598,23 @@
 						"x": "250.63407",
 						"y": "695.05052"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "01FDA",
+					"sid": 130873122807516,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "01FDA",
+					"sid": 867342169835334,
+					"parameters": {
+						"animation": "\"Animación 1\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 808485947556524
@@ -737,6 +645,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "01FDA",
+					"sid": 809508002362466,
+					"parameters": {
+						"animation": "\"FDA\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-position",
 					"objectClass": "Entrega",
 					"sid": 508915089964330,
@@ -756,10 +673,19 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "01FDA",
-					"sid": 914584186926343,
+					"objectClass": "02SDD",
+					"sid": 284624206336965,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "02SDD",
+					"sid": 253214991341380,
+					"parameters": {
+						"animation": "\"Animación 1\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -791,6 +717,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "02SDD",
+					"sid": 824406853271746,
+					"parameters": {
+						"animation": "\"SSD\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-position",
 					"objectClass": "Entrega",
 					"sid": 563730502284829,
@@ -810,10 +745,19 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "02SDD",
-					"sid": 404542476772659,
+					"objectClass": "03GPU",
+					"sid": 595793043746620,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "03GPU",
+					"sid": 426458886680978,
+					"parameters": {
+						"animation": "\"Animación 1\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -845,6 +789,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "03GPU",
+					"sid": 143167242898387,
+					"parameters": {
+						"animation": "\"GPU\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-position",
 					"objectClass": "Entrega",
 					"sid": 660766879310794,
@@ -864,10 +817,19 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "03GPU",
-					"sid": 541205973100784,
+					"objectClass": "04Ventilador",
+					"sid": 383759036753263,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "04Ventilador",
+					"sid": 738020857951287,
+					"parameters": {
+						"animation": "\"Animación 1\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -899,6 +861,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "04Ventilador",
+					"sid": 581186921248014,
+					"parameters": {
+						"animation": "\"Ventilador\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-position",
 					"objectClass": "Entrega",
 					"sid": 609356857670494,
@@ -917,20 +888,29 @@
 					}
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "04Ventilador",
-					"sid": 879857494539485,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
 					"id": "set-size",
 					"objectClass": "Entrega",
 					"sid": 550945590214261,
 					"parameters": {
 						"width": "20",
 						"height": "32"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "05CPU",
+					"sid": 764618113413829,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "05CPU",
+					"sid": 189578521060456,
+					"parameters": {
+						"animation": "\"Animación 1\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -962,6 +942,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "05CPU",
+					"sid": 647427154651337,
+					"parameters": {
+						"animation": "\"CPU\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-position",
 					"objectClass": "Entrega",
 					"sid": 443677692518168,
@@ -990,10 +979,19 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "05CPU",
-					"sid": 624757223338734,
+					"objectClass": "06RAM",
+					"sid": 618030483610731,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "06RAM",
+					"sid": 722606767473711,
+					"parameters": {
+						"animation": "\"Animación 1\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -1025,6 +1023,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "06RAM",
+					"sid": 429415922969230,
+					"parameters": {
+						"animation": "\"RAM\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-position",
 					"objectClass": "Entrega",
 					"sid": 895605662466541,
@@ -1044,10 +1051,19 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "06RAM",
-					"sid": 988464862122887,
+					"objectClass": "07LDD",
+					"sid": 710432821140064,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "07LDD",
+					"sid": 985098053521480,
+					"parameters": {
+						"animation": "\"Animación 1\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -1079,6 +1095,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "07LDD",
+					"sid": 572215402134790,
+					"parameters": {
+						"animation": "\"LDD\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-position",
 					"objectClass": "Entrega",
 					"sid": 690470403271883,
@@ -1094,14 +1119,6 @@
 					"behaviorType": "Sólido",
 					"parameters": {
 						"state": "enabled"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "07LDD",
-					"sid": 104690106317517,
-					"parameters": {
-						"visibility": "visible"
 					}
 				}
 			],
@@ -1133,25 +1150,64 @@
 			],
 			"actions": [
 				{
+					"id": "set-position",
+					"objectClass": "FondoInicio",
+					"sid": 408258414793750,
+					"parameters": {
+						"x": "481.596851",
+						"y": "90.515791"
+					}
+				},
+				{
 					"id": "set-visible",
-					"objectClass": "Final",
-					"sid": 555573753395664,
+					"objectClass": "FondoInicio",
+					"sid": 412712792049150,
 					"parameters": {
 						"visibility": "visible"
 					}
 				},
 				{
 					"id": "move-to-layer",
-					"objectClass": "Final",
-					"sid": 326510199239950,
+					"objectClass": "FondoInicio",
+					"sid": 884901462446331,
 					"parameters": {
 						"layer": "1"
 					}
 				},
 				{
 					"id": "move-to-top",
-					"objectClass": "Final",
-					"sid": 330356679982380
+					"objectClass": "FondoInicio",
+					"sid": 665755101921107
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Botón",
+					"sid": 394028710705811,
+					"parameters": {
+						"x": "490",
+						"y": "124"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón",
+					"sid": 887115975394988,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "move-to-layer",
+					"objectClass": "Botón",
+					"sid": 953758271755635,
+					"parameters": {
+						"layer": "1"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Botón",
+					"sid": 460782082426165
 				},
 				{
 					"id": "destroy",
@@ -1170,6 +1226,227 @@
 				}
 			],
 			"sid": 410221308124473
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 652355584128270,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Botón"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 705115021011230,
+					"parameters": {
+						"variable": "Inicio"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Misión",
+					"sid": 794499716341333,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "01FDA",
+					"sid": 762336940110893,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "01FDA",
+					"sid": 752466882372647,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "02SDD",
+					"sid": 346979495972674,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "02SDD",
+					"sid": 923084231423399,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "03GPU",
+					"sid": 185153442747990,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "03GPU",
+					"sid": 268227337034082,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "04Ventilador",
+					"sid": 713362869625829,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "04Ventilador",
+					"sid": 625253970916319,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "05CPU",
+					"sid": 391183362149783,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "05CPU",
+					"sid": 678941491852523,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "06RAM",
+					"sid": 680256072352101,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "06RAM",
+					"sid": 818534767771839,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "07LDD",
+					"sid": 619196375568288,
+					"behaviorType": "Sólido",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "07LDD",
+					"sid": 298744635286964,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FondoInicio",
+					"sid": 488742676220559,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón",
+					"sid": 931174175710176,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 559641087416793,
+					"parameters": {
+						"variable": "Inicio",
+						"value": "true"
+					}
+				},
+				{
+					"id": "save",
+					"objectClass": "System",
+					"sid": 916050621161094,
+					"parameters": {
+						"slot": "\"mysave\""
+					}
+				}
+			],
+			"sid": 667778390159493
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 435118416887861,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Botón"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 876617589446094,
+					"parameters": {
+						"variable": "Inicio"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "System",
+					"sid": 126085147592032,
+					"parameters": {
+						"slot": "\"mysave\""
+					}
+				}
+			],
+			"sid": 197197426686915
 		}
 	],
 	"sid": 538042458039003

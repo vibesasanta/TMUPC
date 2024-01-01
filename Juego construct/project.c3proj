@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -60,7 +67,10 @@
 			"06RAM",
 			"07LDD",
 			"Fondo",
-			"Pantalla"
+			"Pantalla",
+			"FondoInicio",
+			"Botón",
+			"Mouse"
 		],
 		"subfolders": []
 	},

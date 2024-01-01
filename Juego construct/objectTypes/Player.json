@@ -29,7 +29,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3785026,
+						"imageSpriteId": 5720780,
 						"collisionPoly": {
 							"points": [
 								0.22,
@@ -54,7 +54,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1795604,
+						"imageSpriteId": 1707797,
 						"collisionPoly": {
 							"points": [
 								0.22,
@@ -90,16 +90,16 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7712006,
+						"imageSpriteId": 6714343,
 						"collisionPoly": {
 							"points": [
-								0.78,
+								0.748,
 								1,
-								0.252,
+								0.22,
 								1,
-								0.252,
+								0.22,
 								0,
-								0.78,
+								0.748,
 								0
 							]
 						},
@@ -115,16 +115,16 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3049594,
+						"imageSpriteId": 5094421,
 						"collisionPoly": {
 							"points": [
-								0.252,
+								0.22,
 								0,
-								0.78,
+								0.748,
 								0,
-								0.78,
+								0.748,
 								1,
-								0.252,
+								0.22,
 								1
 							]
 						},
@@ -140,16 +140,16 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1469167,
+						"imageSpriteId": 1374247,
 						"collisionPoly": {
 							"points": [
-								0.78,
+								0.748,
 								1,
-								0.252,
+								0.22,
 								1,
-								0.252,
+								0.22,
 								0,
-								0.78,
+								0.748,
 								0
 							]
 						},
@@ -165,16 +165,16 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3255874,
+						"imageSpriteId": 6937888,
 						"collisionPoly": {
 							"points": [
-								0.252,
+								0.22,
 								0,
-								0.78,
+								0.748,
 								0,
-								0.78,
+								0.748,
 								1,
-								0.252,
+								0.22,
 								1
 							]
 						},
@@ -201,17 +201,17 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8807675,
+						"imageSpriteId": 4122848,
 						"collisionPoly": {
 							"points": [
 								0.22,
 								0,
 								0.748,
 								0,
-								0.748,
-								0.96875,
+								0.7472500000000001,
+								0.936,
 								0.22,
-								0.96875
+								0.936
 							]
 						},
 						"useCollisionPoly": true,
@@ -237,7 +237,19 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7898486,
+						"imageSpriteId": 8613179,
+						"collisionPoly": {
+							"points": [
+								0.22,
+								0,
+								0.748,
+								0,
+								0.748,
+								0.968,
+								0.22,
+								0.968
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
