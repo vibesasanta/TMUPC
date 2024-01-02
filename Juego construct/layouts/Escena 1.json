@@ -524,6 +524,35 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 28,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 327.1460852098385,
+						"y": 688.0674685621178,
+						"width": 25.576820529835445,
+						"height": 25.576820529835445,
+						"originX": 0.48484848484848486,
+						"originY": 0.48484848484848486,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Coliders",
 					"properties": {
 						"initially-visible": true,
@@ -789,10 +818,10 @@
 					"world": {
 						"x": 303.9442897622672,
 						"y": 648.9276795619319,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 83.456,
+						"height": 50.176,
+						"originX": 0.4616564417177914,
+						"originY": 0.6403061224489796,
 						"color": [
 							1,
 							1,
@@ -807,7 +836,7 @@
 					"type": "FondoInicio",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Inicio",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -816,10 +845,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 167,
-						"y": 625,
-						"width": 334,
-						"height": 193,
+						"x": 159.4036,
+						"y": 628.597671,
+						"width": 321.6604546967658,
+						"height": 185.906095667418,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -836,7 +865,7 @@
 					"type": "Botón",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Jugar",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -845,12 +874,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 163,
-						"y": 661,
-						"width": 132,
-						"height": 47,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 156.49670733679068,
+						"y": 649.6692358292879,
+						"width": 77.08800000000001,
+						"height": 17.49097348357765,
+						"originX": 0.4657534246575342,
+						"originY": -2.088235294117647,
 						"color": [
 							1,
 							1,

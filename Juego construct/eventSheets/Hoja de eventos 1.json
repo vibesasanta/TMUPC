@@ -72,7 +72,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "Botón",
-					"sid": 761214456021610,
+					"sid": 320780851349364,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -1167,9 +1167,18 @@
 					}
 				},
 				{
+					"id": "set-animation",
+					"objectClass": "FondoInicio",
+					"sid": 453254275042452,
+					"parameters": {
+						"animation": "\"Final\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "move-to-layer",
 					"objectClass": "FondoInicio",
-					"sid": 884901462446331,
+					"sid": 765947150382087,
 					"parameters": {
 						"layer": "1"
 					}
@@ -1182,10 +1191,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "Botón",
-					"sid": 394028710705811,
+					"sid": 212239870414040,
 					"parameters": {
-						"x": "490",
-						"y": "124"
+						"x": "390",
+						"y": "110"
 					}
 				},
 				{
@@ -1197,9 +1206,18 @@
 					}
 				},
 				{
+					"id": "set-animation",
+					"objectClass": "Botón",
+					"sid": 621986752143050,
+					"parameters": {
+						"animation": "\"Reiniciar\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "move-to-layer",
 					"objectClass": "Botón",
-					"sid": 953758271755635,
+					"sid": 581659377650408,
 					"parameters": {
 						"layer": "1"
 					}
@@ -1395,20 +1413,20 @@
 					}
 				},
 				{
+					"id": "save",
+					"objectClass": "System",
+					"sid": 423794457545715,
+					"parameters": {
+						"slot": "\"mysave\""
+					}
+				},
+				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 559641087416793,
 					"parameters": {
 						"variable": "Inicio",
 						"value": "true"
-					}
-				},
-				{
-					"id": "save",
-					"objectClass": "System",
-					"sid": 916050621161094,
-					"parameters": {
-						"slot": "\"mysave\""
 					}
 				}
 			],

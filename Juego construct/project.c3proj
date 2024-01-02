@@ -70,7 +70,8 @@
 			"Pantalla",
 			"FondoInicio",
 			"Botón",
-			"Mouse"
+			"Mouse",
+			"Sprite"
 		],
 		"subfolders": []
 	},
