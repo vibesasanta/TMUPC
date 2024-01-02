@@ -1,0 +1,10 @@
+{
+	"name": "Mouse",
+	"plugin-id": "Mouse",
+	"sid": 359026121035510,
+	"singleglobal-inst": {
+		"type": "Mouse",
+		"properties": {},
+		"uid": 27
+	}
+}

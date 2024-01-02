@@ -1,0 +1,86 @@
+{
+	"name": "Botón",
+	"plugin-id": "Sprite",
+	"sid": 116874262223242,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 146,
+						"height": 34,
+						"originX": 0.4657534246575342,
+						"originY": -2.088235294117647,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1900103,
+						"collisionPoly": {
+							"points": [
+								0.00684931506849315,
+								0.029411764705882353,
+								0.9931506849315068,
+								0.058823529411764705,
+								0.9863013698630136,
+								0.9705882352941176,
+								0.00684931506849315,
+								0.9705882352941176
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 637196883000931,
+				"name": "Jugar",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 152,
+						"height": 37,
+						"originX": 0.4473684210526316,
+						"originY": -1.8918918918918919,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5922079,
+						"collisionPoly": {
+							"points": [
+								0.006578947368421052,
+								0.02702702702702703,
+								0.993421052631579,
+								0.02702702702702703,
+								0.993421052631579,
+								0.972972972972973,
+								0.006578947368421052,
+								0.972972972972973
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 362204124866959,
+				"name": "Reiniciar",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
